@@ -1,0 +1,1164 @@
+/* Global Css Variables */
+:root {
+    --fontColor: rgb(0, 0, 0);
+    --navBackground: rgb(248, 248, 248);
+    --navBackground2: rgba(172, 172, 172, 0.637);
+    --navFont: rgb(170, 111, 0);
+    --fontDescription: rgb(255, 255, 255);
+    --labelColor: rgb(116, 116, 116);
+    --notIncluded: rgb(155, 155, 155);
+    --bookingWidget:rgb(207, 2, 2);
+    --bellowBoxHeading:rgb(172, 37, 120);
+    --bellowBoxBackground:rgba(253, 216, 239, 0.808);
+    --imageDescriptionFont:rgba(90, 89, 89, 0.808);
+    --bookinBtn:rgb(255, 255, 255);
+    --boxes:rgb(233, 230, 230);
+    --bookingBackground:rgb(255, 255, 255);
+    --otherRidesBackground:rgb(252, 252, 252);
+    --footerBackground:rgb(0, 0, 0);
+}
+
+/* Navbar Css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.changed-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    background-size: cover;
+}
+.nav-bar-main ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+}
+.nav-bar-main ul li{
+    padding: 20px;
+
+
+}
+.nav-bar-main ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+
+.active{
+    border-bottom: 3px solid rgb(72, 189, 72);
+}
+
+.nav-buttons{
+    margin-left: 10%;
+    width: 20%;
+}
+.nav-bar-main ul{
+    margin-left: 20%;    
+}
+.nav-bar-main{
+    width: 30%;
+
+}
+.h2-title{
+    font-size:15px !important;
+    color:white;
+    padding: 0px 20px;
+margin-top:20px;
+}
+.navbar-container{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 30px;
+}
+@media screen and (max-width:650px){
+    .nav-buttons{
+        margin-left: 0%;
+        width: auto;
+    }
+    .nav-bar-main{
+        width: 100%;
+        
+    }
+    .nav-buttons{
+        width: 60%;
+    }
+    .nav-buttons h2{
+        font-size: 6px;
+    }
+    .nav-bar-main ul li a{
+        font-size: 12px;
+        padding: auto 0 ;
+    }
+    
+       
+}
+@media screen and (max-width:450px){
+    .nav-buttons{
+        display: none;
+    }
+}
+.image-background{
+    
+    width: 100%;
+    height: 520px;
+    background-image: url("./images//background.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.description{
+    width: 40%;
+    color: var(--fontDescription);
+    margin-top: 50px;
+}
+.description p{
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.description h2{
+    font-size: 40px;
+    text-align: left;
+}
+.price-description{
+    color: var(--fontDescription);
+    width: 20%;
+    text-align: left;
+
+}
+.price-description p{
+    font-size: 12px;
+    opacity: 0.8;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 75%;
+    color: rgb(245, 244, 244);
+    padding: 15px 5px;
+    border: 1px solid var(--navBackground2) ;
+}
+.btn{
+    width: 75%;
+    margin-top: 15px;
+    text-align: center;
+    padding: 15px 10px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.btn a{
+    text-decoration: none;
+}
+.price-heading{
+    padding-top: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.total-price-description{
+    font-size: 10px;
+    color: var(--labelColor);
+}
+
+.total-price{
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 15px;
+}
+.total-price-layout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bookingBtn{
+    text-align: center;
+    background-color: rgb(134, 218, 134);
+    color: var(--bookinBtn) ;
+    align-self: center;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.line{
+    border-top: 1px solid rgba(214, 214, 214, 0.699);
+    width: 70%;
+    align-self: center;
+}
+
+
+@media screen and (max-width:800px){
+    .image-background{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    .description {
+
+        width: 60%;
+        text-align: center;
+   
+    }
+    .price-description {
+        width: 65%;
+        margin-left: 25px;
+    }
+    .btn {
+        width: 75%;
+        margin-bottom: 42px;
+    }
+    .description p{
+        margin: 0px;
+        margin-top: 20px;
+        font-size: 13px;
+    }
+    .description h2{
+        font-size: 30px;
+    }
+    .card{
+        width:100%;
+        
+    }
+    .btn{
+        width: 96%;
+        margin-top: 15px;
+        padding: 10px 10px;
+        border-radius: 2px;
+        font-weight: bold;
+    }
+    .price-description{
+        margin-top: 10px;
+    }
+}
+
+
+/* Boooking Widget */
+
+.booking-widget{
+    border: 1px solid rgb(221, 221, 221);
+    padding: 20px 15px;
+   width: 100%;
+    margin: 80px 10px;
+    border-radius: 4px;
+    background-color: var(--bookingBackground);
+    position: sticky;
+    top: 10px;
+    left: 0px;
+    box-shadow: 0px 0px 1px var(--labelColor);
+}
+.inputBox{
+    border: 1px solid rgb(221, 221, 221);
+    padding: 5px 5px;
+
+
+
+}
+
+.label{
+    text-align: left;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    font-size: 10px;
+    color: var(--labelColor);
+}
+.inputBox{
+    font-size: 16px;
+
+
+
+}
+.booking-header{
+    color: var(--bookingWidget);
+    text-align: center;
+}
+
+.booking-icons{
+    padding-right: 30px;
+    color: var(--bookingWidget);
+
+}
+.booking-icons-plus{
+    padding-left: 80px;
+    color: var(--bookingWidget);
+
+}
+@media screen and (max-width:570px){
+    .about-and-booking {
+        flex-direction: column;
+    }
+
+    .stepsImages {
+        width: 100%;
+    }
+    
+}
+
+
+
+/* Bellow Box */
+.bellow-box{
+    background-color:var(--bellowBoxBackground);
+    padding: 10px 25px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 84%;
+    margin-left: 10px;
+    position: static;
+    top: 0;
+    left: 0;
+}
+.bellow-box h5{
+    font-size: 14px;
+    color: var(--bellowBoxHeading);
+    margin-top: 5px;
+
+}
+.bellow-box p{
+    font-size: 12px;
+}
+.main-booking-container{
+    width: 100%;
+}
+
+
+@media screen and (max-width:1250px){
+    .main-booking-container {
+        width: 100%;
+    }
+    .card {
+        width: 90%;
+    }
+    .btn {
+        width: 90%;
+    }
+}
+@media screen and (max-width:1070px){
+    .booking {
+        width: 92%;
+    }
+
+}
+    @media screen and (max-width:800px){
+        .booking {
+            width:90%;
+        }
+        .inputBox {
+            font-size: 13px;
+        }
+        .bellow-box {
+            width: 100%;
+        }
+        .bellow-box {
+            padding: 20px 12px;
+            
+            margin: 20px 0px;
+            
+        }
+    
+        .set-row {
+            flex-direction: column;
+            margin: 10px;
+        }
+    
+    }
+
+
+@media screen and (max-width:570px){
+    .main-booking-container {
+        width: 100%;
+    }
+    .booking {
+        width: 80%;
+        align-self: center;
+    }
+    .booking-widget{
+        margin: 0;
+        width: 98%;
+        position: static;
+    }
+    .label {
+        font-size: 14px;
+    }
+    .inputBox{
+        font-size: 15px;
+    }
+}
+
+
+/* Images with steps and description */
+
+.carrouselBoxSteps{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-bottom: 55px;
+}
+.pic-container{
+    width: 310px;
+    margin: 10px;
+    margin-top: 60px;
+}
+.pic-container img{
+    width: 300px;
+    height: 160px;
+    border-radius: 5px;
+    transition: 0.25s all linear;
+}
+.pic-container img:hover{
+    opacity: 0.8;
+}
+.heading-description{
+    font-size: 14px;
+    font-weight: bold;
+}
+.paragraph-description{
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: justify;
+    color: var(--imageDescriptionFont);
+}
+.set-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+.step-number{
+    border-radius: 25px;
+    width:16px;
+    height: 16px;
+    padding: 2px;
+    padding-top: 4px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 20;
+    font-size: 10px;
+    left: 10;
+    margin-top: 8px;
+    margin-left: 8px;
+    z-index: 1111;
+    
+    }
+
+.stopBtn{
+    width: 25%;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-self: center;
+    text-align: center;
+    border: 1px solid rgb(207, 207, 207);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.stopBtn a{
+    text-decoration: none;
+    color: black;
+}
+.stopBtn a:hover{
+cursor: pointer;
+color: rgb(62, 63, 63);
+}
+
+
+/* Travelllers Review */
+
+.TravelesReview{
+    margin-top: 20px;
+    width: 75%;
+    align-self: center;
+
+}
+.icon-drop{
+    margin-top: 3px;
+    width: 100px;
+
+    font-size:11;
+    font-weight:"bold";
+    transition: 0.25s all linear;
+
+
+}
+.display-none{
+    display: none;
+}
+.dropdown{
+  display: block;
+  width: 80%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px 0px;
+  background-color: rgba(204, 201, 197, 0.555);
+  border-radius: 5px;
+}
+.dropdown li{
+    line-height: 30px;
+    letter-spacing: 1px;
+    list-style: none;
+    text-align: center;
+}
+.dropdown li a{
+    color: rgba(26, 26, 26, 0.849);
+    text-decoration: none;
+    font-size: 12px;
+
+}
+.dropdown li a:hover{
+    color: rgb(116, 116, 116);
+}
+.companyName{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.boxes{
+    width: 360px;
+    margin: 10px;
+    height: 180px;
+    background-color: var(--boxes) ;
+    text-align: center;
+}
+
+.boxes img{
+    margin: 40px auto;
+    width: 50%;
+}
+.travel-description p{
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.traveler-description{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.facestyle{
+    margin-top: 10px;
+    text-align: center;
+
+}
+.facestyle img{
+    border-radius: 100px;
+
+    width: 40px;
+    height: 40px;
+}
+.feedback h5{
+    margin-top: 12px;
+    margin-left: 10px;
+    line-height: 12px;
+}
+.moreDescription{
+    font-size: 10px;
+    font-weight: 500 !important;
+    color: var(--labelColor);
+}
+.moreDescription1{
+    font-size: 9px !important;
+    font-weight: 500;
+    color: var(--labelColor);
+}
+.line1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid rgba(214, 214, 214, 0.699);
+    width: 100%;
+    align-self: center;
+}
+.package{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.included{
+    width: 50%;
+    line-height: 40px;
+    font-weight: 700;
+}
+.included ul{
+    font-size: 13px;
+    
+}
+
+.not-included{
+    margin-left: 20px;
+    width: 40%;
+    line-height: 30px;
+    font-weight: 600;
+    color:var(--notIncluded)
+    
+}
+.not-included ul{
+    
+    font-size: 13px;
+}
+
+@media screen and (max-width:570px){
+
+    .TravelesReview {
+        width: 90% !important;
+    }
+
+    .boxes {
+        width: 330px;
+        margin: 10px;
+        height: 180px;
+        background-color: var(--boxes);
+        text-align: center;
+    }
+    .companyName {
+        flex-direction: column;
+    }
+
+    .boxes{
+        align-self: center;
+        width: 80%;
+        height: auto;
+        border-radius: 10px;
+
+    }
+    .boxes img {
+        width: 70%;
+        height: 80px;
+    }
+    .package {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .included {
+        width: 95%;
+        align-self: center;
+        line-height: 25px;
+    }
+    .not-included {
+        width: 95%;
+        align-self: center;
+        line-height: 25px;
+        margin-top: 30px;
+    }
+}
+
+/* About the ride  */
+
+.about-ride{
+    width: 75%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-self: center;
+}
+.about-ride ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    list-style-image: url('./images/dot.png');
+}
+.about-ride ul li{
+    margin: 15px 0px;
+
+}
+.about-ride ul li h6{
+    font-size: 15px;
+}
+.about-ride li p {
+font-size: 15px;
+line-height: 20px;
+color: var(--labelColor);
+}
+
+.info-about{
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.info-about strong{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 200px;
+    padding: 2px;
+    margin: 0px 5px;
+    font-size: 10px;
+}
+
+
+@media screen and (max-width:1080px){
+    .pic-container{
+        width: 260px;
+    }
+    .pic-container img{
+        width:250px;
+    } 
+    .info-about {
+        font-size: 13px;
+    }
+    .info-about strong{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width:870px){
+    .pic-container{
+        width: 290px;
+    }
+    .pic-container img{
+        width:280px;
+        height:150px;
+    } 
+ 
+}
+
+@media screen and (max-width:630px){
+    .about-ride {
+        width: 90%;
+    }
+    .info-about strong{
+        display: none;
+    }
+    .pic-container {
+        width: 80%;
+        align-self: center;
+    }
+    
+        .pic-container img {
+            width: 100%;
+            height: auto;
+        }
+}
+@media screen and (max-width:570px){
+    .set-row {
+        flex-direction: column;
+    }
+.pic-container {
+    width: 65%;
+    height: auto;
+    align-self: center;
+}
+
+    .pic-container img {
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+
+
+/* Main Carrousel */
+
+
+.carrousel-title{
+    width: 60%;
+    margin: 0 auto;
+    
+}
+.carrousel-title h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    z-index: 9999;
+    font-size: 28px;
+    background-color:var(--otherRidesBackground);
+}
+
+.carousel.carousel-slider .control-arrow {
+    /* top: 0; */
+    /* margin: 0 auto; */
+    color: #fff;
+    align-self: center;
+    height: 50px;
+    font-size: 26px !important;
+    padding-top: 58% !important;
+    /* bottom: 0; */
+    margin-top: 30% !important;
+    color: black;
+    margin-left: 4% !important;
+    margin-right: 4% !important;
+    padding: 5px !important;
+    background-color: #3d3d3d;
+    border-radius: 100px !important;
+    border: 2px solid white !important;
+}
+
+.carrousel2 p{
+    width: 100%;
+    font-size: 17px ;
+}
+
+.allRides {
+    align-content: center;
+    width: 250px;
+        text-align: center;
+        padding: 15px 10px;
+        border: 1px solid rgb(214, 214, 214);
+        color: black;
+        border-radius: 5px;
+        font-weight: bold;
+        margin: 2% auto;
+} 
+
+@media screen and (max-width:660px){
+    .carrousel-title h2{
+        font-size: 20px;
+    }
+    .carrousel2 p{
+        font-size: 12px;
+    }
+}
+
+
+/* Rides Carrousel */
+
+.other-rides-carrousel{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    z-index: 9999;
+    background-color:var(--otherRidesBackground);
+}
+.other-rides-carrousel h2{
+    text-align: center;
+}
+
+.carrousel-style{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+
+.carrousel1{
+    margin: 30px 10px;
+    width: 20%;
+}
+
+.carousel .thumb {
+    display: none !important;
+}
+
+.carousel {
+    height: 100%;
+}
+.carrousel1 p{
+    font-size: 12px;
+}
+.carrousel1 h5{
+margin-top: -20px;
+}
+
+.allRides {
+    align-content: center;
+    width: 250px;
+        text-align: center;
+        padding: 15px 10px;
+        border: 1px solid rgb(214, 214, 214);
+        color: black;
+        border-radius: 5px;
+        font-weight: bold;
+        margin: 2% auto;
+} 
+.line2{
+    align-self: center;
+
+    width: 70% !important;
+    margin: 3% auto;
+    border-top: 1px solid rgba(214, 214, 214, 0.699);
+    width: 100%;
+    align-self: center;
+} 
+
+
+@media screen and (max-width:570px){
+    .carrousel-style {
+        flex-direction: column;
+    }
+    .carrousel1 {
+        align-self: center;
+        margin: 30px 10px;
+        width: 80%;
+        height: auto;
+    }
+}
+@media screen and (max-width:470px){
+    .frequently-asked-questions h2,.TravelesReview h2,#about{
+        font-size: 20px;
+    }
+}
+
+
+/* Footer */
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--footerBackground);
+    
+}
+.iconFooter{
+    color:var(--labelColor);
+    padding: 35px;
+    font-size: 22px;
+}
+
+.navFooter ul{
+    color: var(--labelColor);
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: 0.25 all linear;
+}
+.navFooter ul li{
+    padding: 35px;
+
+    list-style: none;
+    font-size: 15px ;
+}
+.navFooter ul li:hover{
+    color: rgb(216, 202, 184);
+    cursor: pointer;
+}
+.footer-btn{
+    color: var(--labelColor);
+    padding: 5px;
+    height: 25px;
+    font-weight: 500;
+    margin-top: 30px;
+    border: 1px solid var(--labelColor);
+}
+
+@media screen and (max-width:470px){
+    .footer {
+        flex-direction: column;
+    }
+    .iconFooter{
+        align-self: center;
+    }
+    .navFooter ul li {
+        padding: 18px;
+    }
+.footer-btn{
+    width: 50%;
+    align-self: center;
+    margin-bottom: 22px;
+    text-align: center;
+}
+.other-rides-carrousel h2{
+    font-size: 20px;
+}
+}
+@media screen and (max-width:750px){
+    .footer {
+        flex-direction: column;
+    }
+    .iconFooter{
+        align-self: center;
+    }
+    .navFooter ul li {
+        padding: 18px;
+    }
+.footer-btn{
+    width: 50%;
+    align-self: center;
+    margin-bottom: 22px;
+    text-align: center;
+}
+.other-rides-carrousel h2{
+    font-size: 20px;
+}
+}
+
+
+/* Inner Navbar */
+
+.inner-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.navbar-inner{
+    padding-bottom: 0px;
+}
+
+.navbar-inner ul {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    left: 0;  
+    padding: 20px 0px;
+    justify-content: center;
+    width: 10%;
+    float: right;
+
+}
+.navbar-inner ul li{
+    margin-left: 20px;
+    list-style: none;
+    
+}
+.navbar-inner ul li a{
+    text-decoration: none;
+    color: rgb(61, 60, 60);
+
+    font-weight: 500;
+    transition: 0.15s all linear;
+
+}
+
+.save-icon{
+    align-self: center;
+    font-size: 20px;
+    margin-left: 40%;
+    font-size: 17px;
+    color: rgb(61, 60, 60);
+
+}
+
+.line3{
+
+    border-top: 1px solid rgba(214, 214, 214, 0.699);
+    width: 100%;
+    align-self: center;
+} 
+
+@media screen and (max-width:660px){
+.save-icon{
+    display: none;
+    
+}
+.navbar-inner ul{
+    width: 100%;
+}
+}
+/* Final Changes  */
+
+@media screen and (max-width:900px){
+    .info-about strong{
+        display: none;
+    }
+    .about-and-booking {
+        flex-direction: column;
+    }
+    .stepsImages {
+        width: 100%;
+    align-self: center;
+    }
+    .about-ride{
+        width: 90%;
+    }
+    .TravelesReview {
+        width: 90%;
+}
+.traveler-description{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.main-booking-container{
+    width: 100%;
+}
+.booking-widget{
+    width: 400px;
+    align-self: center;
+margin: 0 auto;
+    position: static;
+}
+
+.booking {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-self: center;
+}
+
+
+.carrousel1{
+    margin: 30px 10px;
+    width: 60%;
+    align-self: center;
+}
+
+.carrousel-style{
+    align-self: center;
+
+    flex-direction: column;
+}
+
+.carousel {
+    height: 20%;
+}
+.carrousel1 p{
+    font-size: 14px;
+}
+.carrousel1 h5{
+margin-top: -20px;
+}
+.booking {
+    width: 80%;
+    position: static;
+    top: 0;
+    left: 0;
+}
+.other-rides-carrousel h2 {
+    font-size: 20px;
+}
+.bellow-box{
+    width: 350px;
+    align-self: center;
+    margin: 0 auto;
+}
+}
+
+
+@media screen and (max-width:520px){
+    .booking-widget{
+        width: 90%;
+    }
+    .other-rides-carrousel h2 {
+        font-size: 18px;
+    }
+    .bellow-box{
+        width: 80%;
+    }
+    .allRides{
+        font-size: 15px;
+        padding: 10px;
+    }
+    .carrousel1{
+        width: 74%;
+    }
+    .description h2 {
+        font-size: 28px;
+    }
+}
